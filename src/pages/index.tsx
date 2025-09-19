@@ -3,13 +3,11 @@ import { Button } from '@/components/Button'
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="min-h-screen bg-gradient-to-br from-blue-600 to-indigo-700">
             {/* Navigation */}
             <nav className="container mx-auto px-4 py-6">
                 <div className="flex items-center justify-between">
-                    <h1 className="text-2xl font-bold text-gray-900">
-                        CalNudge
-                    </h1>
+                    <h1 className="text-2xl font-bold text-white">CalNudge</h1>
                     <Link href="/app/login">
                         <Button variant="secondary">Sign In</Button>
                     </Link>
@@ -19,10 +17,10 @@ export default function Home() {
             {/* Hero Section */}
             <main className="container mx-auto px-4 py-16">
                 <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="mb-6 text-5xl font-bold text-gray-900 md:text-6xl">
+                    <h2 className="mb-6 text-5xl font-bold text-white md:text-6xl">
                         Never Miss a Meeting Again
                     </h2>
-                    <p className="mb-8 text-xl text-gray-700 md:text-2xl">
+                    <p className="mb-8 text-xl text-blue-100 md:text-2xl">
                         CalNudge syncs with Google Calendar and Zoom to call,
                         text, or page you via Twilio when you&apos;re missing a
                         meeting.
@@ -39,14 +37,14 @@ export default function Home() {
 
                 {/* Features */}
                 <div className="mx-auto mt-24 max-w-6xl">
-                    <h3 className="mb-12 text-center text-3xl font-bold text-gray-900">
+                    <h3 className="mb-12 text-center text-3xl font-bold text-white">
                         How It Works
                     </h3>
                     <div className="grid gap-8 md:grid-cols-3">
-                        <div className="rounded-xl bg-white p-8 shadow-lg">
-                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                        <div className="rounded-xl bg-white p-8 shadow-xl">
+                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600">
                                 <svg
-                                    className="h-6 w-6 text-blue-600"
+                                    className="h-6 w-6 text-white"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -59,7 +57,7 @@ export default function Home() {
                                     />
                                 </svg>
                             </div>
-                            <h4 className="mb-2 text-xl font-semibold">
+                            <h4 className="mb-2 text-xl font-semibold text-gray-900">
                                 Google Calendar Sync
                             </h4>
                             <p className="text-gray-600">
@@ -69,10 +67,10 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="rounded-xl bg-white p-8 shadow-lg">
-                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100">
+                        <div className="rounded-xl bg-white p-8 shadow-xl">
+                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-600">
                                 <svg
-                                    className="h-6 w-6 text-green-600"
+                                    className="h-6 w-6 text-white"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -85,7 +83,7 @@ export default function Home() {
                                     />
                                 </svg>
                             </div>
-                            <h4 className="mb-2 text-xl font-semibold">
+                            <h4 className="mb-2 text-xl font-semibold text-gray-900">
                                 Zoom Integration
                             </h4>
                             <p className="text-gray-600">
@@ -95,10 +93,10 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="rounded-xl bg-white p-8 shadow-lg">
-                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100">
+                        <div className="rounded-xl bg-white p-8 shadow-xl">
+                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-600">
                                 <svg
-                                    className="h-6 w-6 text-purple-600"
+                                    className="h-6 w-6 text-white"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -111,7 +109,7 @@ export default function Home() {
                                     />
                                 </svg>
                             </div>
-                            <h4 className="mb-2 text-xl font-semibold">
+                            <h4 className="mb-2 text-xl font-semibold text-gray-900">
                                 Multi-Channel Alerts
                             </h4>
                             <p className="text-gray-600">
