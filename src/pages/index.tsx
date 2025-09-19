@@ -3,7 +3,7 @@ import { Button } from '@/components/Button'
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-600 to-indigo-700">
+        <div className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-700">
             {/* Navigation */}
             <nav className="container mx-auto px-4 py-6">
                 <div className="flex items-center justify-between">
@@ -16,8 +16,8 @@ export default function Home() {
 
             {/* Hero Section */}
             <main className="container mx-auto px-4 py-16">
-                <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="mb-6 text-5xl font-bold text-white md:text-6xl">
+                <div className="mx-auto max-w-5xl text-center">
+                    <h2 className="mb-6 text-5xl font-bold text-white md:text-7xl">
                         Never Miss a Meeting Again
                     </h2>
                     <p className="mb-8 text-xl text-blue-100 md:text-2xl">
@@ -41,7 +41,7 @@ export default function Home() {
                         How It Works
                     </h3>
                     <div className="grid gap-8 md:grid-cols-3">
-                        <div className="rounded-xl bg-white p-8 shadow-xl">
+                        <div className="rounded-2xl bg-white p-8 shadow-2xl">
                             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600">
                                 <svg
                                     className="h-6 w-6 text-white"
@@ -67,7 +67,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="rounded-xl bg-white p-8 shadow-xl">
+                        <div className="rounded-2xl bg-white p-8 shadow-2xl">
                             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-600">
                                 <svg
                                     className="h-6 w-6 text-white"
@@ -93,7 +93,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="rounded-xl bg-white p-8 shadow-xl">
+                        <div className="rounded-2xl bg-white p-8 shadow-2xl">
                             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-600">
                                 <svg
                                     className="h-6 w-6 text-white"
@@ -122,7 +122,7 @@ export default function Home() {
                 </div>
 
                 {/* CTA Section */}
-                <div className="mx-auto mt-24 max-w-4xl rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-12 text-center text-white">
+                <div className="mx-auto mt-24 max-w-4xl rounded-3xl bg-gradient-to-r bg-blue-950 p-12 text-center text-white">
                     <h3 className="mb-4 text-3xl font-bold">
                         Start Your Free Trial Today
                     </h3>
@@ -130,10 +130,7 @@ export default function Home() {
                         Never let another important meeting slip by.
                     </p>
                     <Link href="/app/login">
-                        <Button
-                            size="large"
-                            className="bg-white text-blue-600 hover:bg-gray-100"
-                        >
+                        <Button variant="white" size="large">
                             Get Started Now
                         </Button>
                     </Link>
@@ -141,7 +138,7 @@ export default function Home() {
             </main>
 
             {/* Footer */}
-            <footer className="mt-24 border-t border-gray-200 bg-white">
+            <footer className="mt-24 bg-gray-50">
                 <div className="container mx-auto px-4 py-8">
                     <p className="text-center text-gray-600">
                         © 2024 CalNudge. All rights reserved.
