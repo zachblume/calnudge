@@ -10,18 +10,22 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),
   {
     ignores: [
       'node_modules/**',
       '.next/**',
+      '**/.next/**',
       'out/**',
       'build/**',
       'next-env.d.ts',
+      '**/next-env.d.ts',
       'coverage/**',
       'vitest.config.ts',
       'supabase/**',
     ],
+  },
+  ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),
+  {
     rules: {
       '@typescript-eslint/no-unused-vars': [
         'warn',
